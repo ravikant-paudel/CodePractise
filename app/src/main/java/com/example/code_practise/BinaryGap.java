@@ -4,12 +4,12 @@ public class BinaryGap {
 
     public static void main(String[] args) {
         BinaryGap binaryGap = new BinaryGap();
-        binaryGap.Solution(9);
+        int _obtainValue = binaryGap.Solution(9);
+        System.out.println(_obtainValue);
     }
 
     public int Solution(int N) {
         String binaryString = Integer.toString(N, 2);
-        System.out.println(binaryString);
 
         boolean _started = false;
         int _counter = 0;
@@ -30,7 +30,7 @@ public class BinaryGap {
                 _counter++;
             }
         }
-        System.out.println(_maxCount);
+
         return _maxCount;
     }
 }
